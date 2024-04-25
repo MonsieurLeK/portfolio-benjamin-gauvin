@@ -9,7 +9,16 @@ body {
 }
 
 #main-scene {
+  position: relative;
+  z-index: 1;
   height: 100%;
   width: 100%;
   background: black;
+}
+#title-test {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  margin: 20px;
+  user-select: none;
 }

@@ -21,7 +21,8 @@ function App() {
     {from: {cardScale2: 1}, to: {cardScale2: 1.5}, config: {duration: 300, easing: easings.easeOutBack}} :
   {from: {cardScale2: 1.5}, to: {cardScale2: 1}})
 
-  return (
+  return (<>
+      <h1 id='title-test'>GAUVIN Benjamin</h1>
     <div id='main-scene' ref={sceneRef} >
       <Canvas key={cameraPosition.toString()} camera={{position: cameraPosition, fov: 50}} >
         <OrbitControls minDistance={10} maxDistance={50} enablePan={false} enableRotate={false} />
@@ -63,6 +64,7 @@ function App() {
         </PresentationControls>
       </Canvas>
     </div>
+    </>
   );
 }
 
