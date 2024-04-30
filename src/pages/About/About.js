@@ -17,11 +17,11 @@ export default function About(props) {
             <div className={styles.separator} ></div>
             <p className={styles.sectionText} ><strong>Développeur passionné</strong> depuis l'enfance, j'ai décidé de me 
                 reconvertir dans le domaine du web.<br/>
-                Actuellement développeur web, je réalise des solution web
+                Actuellement <strong>développeur web</strong>, je réalise des <strong> solutions web </strong> 
                 depuis la conception du projet jusqu'à la mise en ligne du 
                 produit final.<br/>
                 Spécialisé en JavaScript, ce language me permet de développer 
-                sur tous types de plateformes.
+                sur <strong>tous types de plateformes</strong>.
             </p>
         </section>
         <section className={styles.competences} >
@@ -34,6 +34,17 @@ export default function About(props) {
                 </div>
                 <div className={styles.category2} >
                     <h3>Mes points forts :</h3>
+                    <div className={styles.listContainer} >
+                            <span>Capacité d'apprentissage  |</span>
+                            <span>Créativité  |</span>
+                            <span>Résolution de problèmes  |</span>
+                            <span>Travail en équipe  |</span>
+                            <span>Gestion de projets agiles  |</span>
+                            <span>Autonomie  |</span>
+                            <span>Curiosité  |</span>
+                            <span>Rigueur  |</span>
+                            <span>Communication</span>
+                    </div>
                 </div>
             </article>
         </section>
