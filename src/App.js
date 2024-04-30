@@ -3,7 +3,7 @@ import About from './pages/About/About.js';
 import { Canvas } from '@react-three/fiber'
 import {  Stars } from '@react-three/drei/core/Stars.js';
 import { Suspense, useRef, useState } from 'react';
-import MainScene from './components/MainScene.jsx'
+import MainScene from './components/MainSceneGLB.jsx'
 import { OrbitControls, PresentationControls, Text } from '@react-three/drei';
 import { useSpring, animated, easings } from '@react-spring/three';
 import font3d from '../src/assets/Jersey10-Regular.ttf'
