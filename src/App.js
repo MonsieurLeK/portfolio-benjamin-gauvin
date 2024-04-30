@@ -37,7 +37,7 @@ function App() {
     <span id='credits' >Credits: Auteur 3d:	Amy (https://sketchfab.com/uouoamy) Titre: Restaurant</span>
     <About active={about} event={() => setAbout(false)} />
     <div id='main-scene' ref={sceneRef} >
-      <Canvas  camera={{position: [0, 25, 10], fov: 50}} ref={cameraRef} >
+      <Canvas  camera={{position: [0, 25, 20], fov: 50}} ref={cameraRef} >
         <OrbitControls minDistance={10} maxDistance={50} enablePan={false} enableRotate={false} />
         <Stars fade />
         <directionalLight />

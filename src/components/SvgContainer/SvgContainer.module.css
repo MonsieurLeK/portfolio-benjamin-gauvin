@@ -7,6 +7,7 @@
     padding-left: 50px;
 }
 .svg {
+    z-index: 4;
     height: 70px;
     width: 70px;
     user-select: none;
@@ -20,4 +21,11 @@
 }
 .displayNone {
     display: none;
+}
+
+@media screen and (max-width: 700px) {
+.svg {
+    height: 40px;
+    width: 40px;
+}
 }

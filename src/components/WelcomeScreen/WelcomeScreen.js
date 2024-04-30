@@ -13,7 +13,6 @@ export default function WelcomeScreen() {
             ]}
             speed={40}
             style={{whiteSpace: 'pre-line', 
-            fontSize: '4rem', 
             color: "white",
             }}
             repeat={0} />

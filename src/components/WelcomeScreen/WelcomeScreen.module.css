@@ -30,6 +30,7 @@
     transform: translateY(0);
     animation: go-up 0.7s ease-in 4.2s forwards;
     user-select: none;
+    font-size: 3.5rem;
 }
 
 @keyframes go-up {
@@ -38,5 +39,11 @@
     }
     to {
         transform: translateY(-2000px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .text {
+        font-size: 2rem;
     }
 }
