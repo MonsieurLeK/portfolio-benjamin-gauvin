@@ -8,6 +8,7 @@ import { OrbitControls, PresentationControls, Text } from '@react-three/drei';
 import { useSpring, animated, easings } from '@react-spring/three';
 import font3d from '../src/assets/Jersey10-Regular.ttf'
 import WelcomeScreen from './components/WelcomeScreen/WelcomeScreen.js';
+import Projects from './pages/Projects/Projects.js';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   const [active1, setActive1] = useState(false)
   const [active2, setActive2] = useState(false)
   const [about, setAbout] = useState(false)
+  const [projects, setProjects] = useState(false)
   const { cardScale1, cardRotation1 } = useSpring(active1 ? 
     { from: {cardScale1: 1, cardRotation1: [-0.3, 0.5, 0]}, 
     to: {cardScale1: 1.5, cardRotation1: [-0.3, 0.3, 0]}, 
@@ -34,8 +36,10 @@ function App() {
   return (<>
     <WelcomeScreen />
     <h1 id='title-main'>GAUVIN Benjamin</h1>
+    <span className="mailAdress" >benjamingauvin.dev@gmail.com</span>
     <span id='credits' >Credits: Auteur 3d:	Amy (https://sketchfab.com/uouoamy) Titre: Restaurant</span>
     <About active={about} event={() => setAbout(false)} />
+    <Projects active={projects} event={() => setProjects(false)} />
     <div id='main-scene' ref={sceneRef} >
       <Canvas  camera={{position: [0, 25, 20], fov: 50}} ref={cameraRef} >
         <OrbitControls minDistance={10} maxDistance={50} enablePan={false} enableRotate={false} />
@@ -66,6 +70,7 @@ function App() {
           scale={cardScale2}
           onPointerEnter={() => setActive2(true)}
           onPointerLeave={() => setActive2(false)}
+          onPointerDown={() => setProjects(true)}
           position={[5, 5, -5]}
           rotation={cardRotation2} >
             <boxGeometry args={[3.5, 5, 0.1]} />

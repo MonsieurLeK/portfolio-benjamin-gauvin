@@ -143,6 +143,7 @@
 }
 .listContainer {
     display: flex;
+    position: relative;
     justify-content: center;
     flex-wrap: wrap;
     margin-left: 30px;
@@ -160,6 +161,7 @@
     filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.5));
     font-size: 2.5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
     animation: fade-in-opacity 1s ease-out 0.5s backwards;
 }
 .separator {
@@ -169,7 +171,7 @@
     animation: fade-in-opacity 1.5s ease-out 0.5s backwards;
 }
 .sectionText {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     animation: fade-in-opacity 2s ease-out 0.5s backwards;
 }
 @keyframes fade-in-opacity {
@@ -180,6 +182,30 @@
         opacity: 1;
     }
 }
+.formation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 40px;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: antiquewhite;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 78%, rgba(62,62,62,0.835171568627451) 100%);
+    animation: fade-in-opacity 0.5s ease-out 2s backwards;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .formation {
+        width: 90dvw;
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .pictureContainer {
         z-index: 3;
@@ -207,7 +233,7 @@
     .pictureContainer {
         z-index: 3;
         scale: 0.5;
-        top: 170px;
+        top: 40dvh;
         right: -95px;
     }
     @keyframes picture-fade-in {
@@ -225,6 +251,10 @@
         width: 80%;
     }
     .listContainer span {
+        font-size: 0.9rem;
+    }
+    .formation {
+        width: 90dvw;
         font-size: 0.9rem;
     }
 }

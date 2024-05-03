@@ -20,8 +20,11 @@ export default function About(props) {
                 Actuellement <strong>développeur web</strong>, je réalise des <strong> solutions web </strong> 
                 depuis la conception du projet jusqu'à la mise en ligne du 
                 produit final.<br/>
-                Spécialisé en JavaScript, ce language me permet de développer 
-                sur <strong>tous types de plateformes</strong>.
+                Spécialisé en <strong>JavaScript</strong>, ce langage me permet de développer 
+                sur <strong>tous types de plateformes</strong>.<br />
+                <strong>Mon domaine d'expertise</strong>: Confection d'<strong>interfaces utilisateur </strong>
+                ou tous types de <strong>fonctionnalités</strong>, <strong>optimisation</strong>, <strong>référencement</strong>, 
+                <strong> SEO</strong>,<strong> modernisation</strong>.
             </p>
         </section>
         <section className={styles.competences} >
@@ -47,6 +50,9 @@ export default function About(props) {
                     </div>
                 </div>
             </article>
+            <div className={styles.formation}>
+                Formation: Intégrateur Web / Centre: OpenClassrooms / Niveau: Bac +2
+            </div>
         </section>
     </div>
 }

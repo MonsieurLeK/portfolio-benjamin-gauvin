@@ -7,6 +7,7 @@
 body {
   height: 100dvh;
   width: 100dvw;
+  overflow-x: hidden;
 }
 
 #main-scene {
@@ -15,6 +16,7 @@ body {
   height: 100%;
   width: 100%;
   background: black;
+  overflow-x: hidden;
 }
 #title-main {
   position: absolute;
@@ -27,6 +29,14 @@ body {
   opacity: 0;
   animation: fade-in 0.7s ease-out 5s forwards; 
 }
+.mailAdress {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 60px;
+  left: 20px;
+  animation: opacity-in 0.8s ease-out 5.5s backwards;
+}
 @keyframes fade-in {
   from {
     transform: translateY(-100px);
@@ -34,6 +44,14 @@ body {
   }
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes opacity-in {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }
@@ -46,4 +64,13 @@ body {
   bottom: 20px;
   left: 20px;
   user-select: none;
+}
+
+@media screen and (max-width: 700px) {
+  #title-main {
+    font-size: 1.2rem;
+  }
+  .mailAdress {
+    top: 45px;
+  }
 }

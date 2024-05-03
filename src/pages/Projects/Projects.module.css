@@ -1,0 +1,48 @@
+.mainContainer {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 100px;
+    background: antiquewhite;
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+.backArrow {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    height: 50px;
+    width: 50px;
+    scale: 1;
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 1));
+    transition: all 0.2s ease;
+    animation: come-in-top 0.5s ease-out 1s backwards;
+}
+@keyframes come-in-top {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.backArrow:hover {
+    scale: 1.2;
+    filter: drop-shadow(8px 5px 3px rgba(0, 0, 0, 0.5));
+}
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    min-height: 50px;
+    border-left: 3px solid black;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: inset 20px 5px 8px -5px rgba(0, 0, 0, 0.4);
+}
