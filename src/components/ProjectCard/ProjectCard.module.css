@@ -29,7 +29,8 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.9);
+    background: black;
+    opacity: 0.9;
     top: 0;
     left: 0;
     transform: translateY(-250px);
@@ -83,6 +84,7 @@
     .linkModal img {
         height: 30px;
         width: 30px;
+        opacity: 0.8;
     }
     .projectTitle {
         font-size: 1.3rem;

@@ -24,7 +24,7 @@ export default function Projects(props) {
             description="Le site de Kasa est un site de réservation immobilière qui 
             a été codé il y a maintenant plus de 10 ans en ASP.NET. Il m'a été demandé
             pour ce projet de recoder entièrement le site avec des langages plus modernes (React pour
-            le front-end et NodeJs pour le back-end." />
+            le front-end et NodeJs pour le back-end.)" />
             <ProjectCard img={ohmyfoodImg}
             imgAlt='site ohmyfood'
             title="Ohmyfood"

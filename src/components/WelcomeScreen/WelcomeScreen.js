@@ -6,12 +6,10 @@ export default function WelcomeScreen() {
         <TypeAnimation
         className={styles.text}
             sequence={[
-                `GAUVIN Benjamin`,
-                1000,
                 `GAUVIN Benjamin\nDéveloppeur Web`,
                 200,
             ]}
-            speed={40}
+            speed={60}
             style={{whiteSpace: 'pre-line', 
             color: "white",
             }}
