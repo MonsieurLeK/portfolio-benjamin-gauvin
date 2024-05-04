@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.f19558c2.css",
-    "main.js": "/static/js/main.64c8a2e1.js",
-    "static/js/451.b3f01034.chunk.js": "/static/js/451.b3f01034.chunk.js",
-    "static/js/453.5cfad2e5.chunk.js": "/static/js/453.5cfad2e5.chunk.js",
-    "static/media/Jersey10-Regular.ttf": "/static/media/Jersey10-Regular.e27466ea70742643a529.ttf",
-    "index.html": "/index.html",
-    "main.f19558c2.css.map": "/static/css/main.f19558c2.css.map",
-    "main.64c8a2e1.js.map": "/static/js/main.64c8a2e1.js.map",
-    "451.b3f01034.chunk.js.map": "/static/js/451.b3f01034.chunk.js.map",
-    "453.5cfad2e5.chunk.js.map": "/static/js/453.5cfad2e5.chunk.js.map"
+    "main.css": "./static/css/main.87349ea6.css",
+    "main.js": "./static/js/main.06c90d5c.js",
+    "static/js/451.b3f01034.chunk.js": "./static/js/451.b3f01034.chunk.js",
+    "static/js/453.5cfad2e5.chunk.js": "./static/js/453.5cfad2e5.chunk.js",
+    "static/media/Jersey10-Regular.ttf": "./static/media/Jersey10-Regular.e27466ea70742643a529.ttf",
+    "static/media/benjamin-gauvin.webp": "./static/media/benjamin-gauvin.116c57291d1038f3ca0f.webp",
+    "index.html": "./index.html",
+    "main.87349ea6.css.map": "./static/css/main.87349ea6.css.map",
+    "main.06c90d5c.js.map": "./static/js/main.06c90d5c.js.map",
+    "451.b3f01034.chunk.js.map": "./static/js/451.b3f01034.chunk.js.map",
+    "453.5cfad2e5.chunk.js.map": "./static/js/453.5cfad2e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f19558c2.css",
-    "static/js/main.64c8a2e1.js"
+    ".static/css/main.87349ea6.css",
+    ".static/js/main.06c90d5c.js"
   ]
 }
