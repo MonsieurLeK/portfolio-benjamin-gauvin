@@ -71,7 +71,7 @@ function App() {
           onPointerEnter={() => setActive2(true)}
           onPointerLeave={() => setActive2(false)}
           onPointerDown={() => setProjects(true)}
-          position={[5, 5, -5]}
+          position={[4, 5, -5]}
           rotation={cardRotation2} >
             <boxGeometry args={[3.5, 5, 0.1]} />
             <meshPhongMaterial color="white" transparent opacity={active2 ? 1 : 0.9} />
