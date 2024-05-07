@@ -5,6 +5,7 @@ import githubSVG from '../../assets/img/github.svg'
 
 export default function ProjectCard(props) {
     return <article className={styles.cardContainer} >
+        <h3 className={styles.projectTitle} >{props.title}</h3>
         <div className={styles.imgContainer} >
         <img loading='lazy' src={props.img} alt={props.imgAlt} />
         <div className={styles.linkModal} >
@@ -22,7 +23,6 @@ export default function ProjectCard(props) {
         </div>
         <div className={styles.separator} ></div>
         <div className={styles.textContainer} >
-        <h3 className={styles.projectTitle} >{props.title}</h3>
         <span >
         <h4>Contexte:</h4>
         <p>{props.context}</p>
